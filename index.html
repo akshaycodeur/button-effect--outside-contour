@@ -5,8 +5,96 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <style>
+        .container{
+  width:100vw;
+  height: 100vh;
+  justify-content:center;
+  align-items:center;
+  display:flex;
+  background:beige;
+}
+
+.buttonone{display:flex; padding: 1rem; background:#fafafa; color:#333;position:relative}
+
+.buttonone span.uno{
+  height: 1px;
+  width:0;
+  background:red;
+  top:0;
+  left:0;
+  position:absolute;
+  transition: all 300ms;
+}
+
+.buttonone:hover span.uno{
+  width: 100%;
+  height: 2px;
+}
+
+.buttonone span.uno:before{
+  content:'';
+  display:block;
+  position:absolute;
+  right:0;
+  top:0;
+  height:0;
+  width:2px;
+  background:red;
+}
+
+
+.buttonone:hover span.uno:before{
+  height:50.5px;
+  transition-delay:600ms;
+  -webkit-transition-delay: 600ms;
+  transition: height 600ms ease-out, width 600ms ease-out;
+}
+
+span.secundo{
+  display:block;
+  height:1px;
+  width:1px;
+  background:red;
+  position:absolute;
+  right:0;
+  bottom:0;
+}
+
+span.tertio{
+  display:block;
+  height:0;
+  width:1px;
+  background:red;
+  position:absolute;
+  left:0;
+  bottom:0;
+}
+
+.buttonone:hover span.secundo{
+ width:100%;
+  transition-delay:1200ms;
+  -webkit-transition-delay: 1200ms;
+  transition: height 600ms ease-out, width 600ms ease-out;
+}
+
+.buttonone:hover span.tertio{
+ height:100%;
+  transition-delay:1200ms;
+  -webkit-transition-delay: 1200ms;
+  transition: height 600ms ease-out, width 600ms ease-out;
+}
+    </style>
 </head>
 <body>
-    
+    <div class="container">
+        <a href="#" class='buttonone'>
+          Click here
+          <span class='uno'></span>
+          <span class='secundo'></span>
+          <span class='tertio'></span>
+        </a>
+      </div>
 </body>
 </html>
