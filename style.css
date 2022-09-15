@@ -1,0 +1,175 @@
+
+.btn.primary-btn.sidebar-btn {
+	font-size: 16px;
+	font-size: .88889rem
+}
+
+.btn.secondary-btn {
+	color: #303030;
+	padding: 12px 20px 12px 25px;
+	position: relative
+}
+
+.btn.secondary-btn:before {
+	content: '\e80a';
+	font-family: fontello;
+	font-weight: 400;
+	font-style: normal;
+	color: inherit;
+	position: absolute;
+	left: -2px;
+	font-size: 80%;
+	margin-top: 4px
+}
+
+.btn.secondary-btn:after {
+	top: 0;
+	right: 0;
+	height: 0;
+	width: 2px;
+	content: "";
+	position: absolute;
+	background-color: #03f;
+	-webkit-transition: height 150ms ease-out, width 150ms ease-out;
+	transition: height 150ms ease-out, width 150ms ease-out;
+	-webkit-transition-delay: 350ms;
+	transition-delay: 350ms
+}
+
+.btn.secondary-btn span {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute
+}
+
+.btn.secondary-btn span:before,
+.btn.secondary-btn span:after {
+	content: "";
+	position: absolute;
+	-webkit-transition: height 250ms ease-out, width 250ms ease-out;
+	transition: height 250ms ease-out, width 250ms ease-out;
+	opacity: 1;
+	color: inherit;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background-color: #03f
+}
+
+.btn.secondary-btn span:after {
+	height: 0;
+	width: 2px;
+	-webkit-transition: height 100ms ease-out, width 100ms ease-out;
+	transition: height 100ms ease-out, width 100ms ease-out
+}
+
+.btn.secondary-btn span:first-child:before {
+	top: 0;
+	-webkit-transition-delay: 500ms;
+	transition-delay: 500ms
+}
+
+.btn.secondary-btn span:first-child:after {
+	bottom: calc(100% - 19px);
+	-webkit-transition-delay: 750ms;
+	transition-delay: 750ms
+}
+
+.btn.secondary-btn span:last-child:before {
+	right: 0;
+	left: unset;
+	-webkit-transition-delay: 100ms;
+	transition-delay: 100ms
+}
+
+.btn.secondary-btn span:last-child:after {
+	-webkit-transition-delay: 0;
+	transition-delay: 0
+}
+
+.btn.secondary-btn span:last-child:before,
+.btn.secondary-btn span:last-child:after {
+	bottom: 0
+}
+
+.btn.secondary-btn:hover {
+	color: #03f
+}
+
+.btn.secondary-btn:hover span:before {
+	width: 100%
+}
+
+.btn.secondary-btn:hover span:after {
+	height: 19px
+}
+
+.btn.secondary-btn:hover span:first-child:before {
+	-webkit-transition-delay: 100ms;
+	transition-delay: 100ms
+}
+
+.btn.secondary-btn:hover span:first-child:after {
+	-webkit-transition-delay: 0ms;
+	transition-delay: 0ms
+}
+
+.btn.secondary-btn:hover span:last-child:before {
+	-webkit-transition-delay: 500ms;
+	transition-delay: 500ms
+}
+
+.btn.secondary-btn:hover span:last-child:after {
+	-webkit-transition-delay: 750ms;
+	transition-delay: 750ms
+}
+
+.btn.secondary-btn:hover:after {
+	height: 100%
+}
+
+.btn.link {
+	position: relative;
+	padding: 10px 10px 10px 25px
+}
+
+.btn.link:before {
+	content: '\e80a';
+	font-family: fontello;
+	font-weight: 400;
+	font-style: normal;
+	color: inherit;
+	position: absolute;
+	left: 0;
+	font-size: 80%;
+	margin-top: 4px
+}
+
+.btn.link:after {
+	clear: both
+}
+
+.btn.link:hover {
+	color: #03f
+}
+
+.btn.secondary-btn-no-css {
+	color: #03f;
+	border-color: #03f;
+	font-size: 20px;
+	font-size: 1.11111rem;
+	line-height: 1.28;
+	font-weight: 600;
+	border-radius: 2px;
+	background-clip: padding-box;
+	border-width: 2.5px
+}
+
+.btn.secondary-btn-no-css:hover {
+	color: #fff;
+	background-color: #0027cc;
+	border-color: #0027cc
+}
